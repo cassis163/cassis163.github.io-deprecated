@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Specific attributes */
+.fullwidth {
+    width: 100%;
+}
+
+.color-effect {
+    animation-name: color-gradient;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Animations */
+@keyframes color-gradient {
+    from {
+        background: dodgerblue
+    }
+    to {
+        background: royalblue;
+    }
+}
+
+
+/* General*/
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row wrap;
+    justify-content: center;
+}
+
+h2, h1, a, p, table {
+    color: white;
+}
+
+/* Navigation bar*/
+#navbar {
+    height: 75px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#navbar ul li a:hover {
+    font-style: italic;
+}
+
+#navbar ul li a:active {
+    color: gray;
+}
+
+/* Title*/
+h1 {
+    height: 100px;
+    font-size: 75px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Container elements*/
+article, aside {
+    width: 50%;
+    height: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+article p, article ul, article h2 {
+    width: 80%;
+}
+
+article h2 {
+    margin-left: 10%;
+}
+
+article > p, article ul {
+    margin: 0 0 0 10%;
+}
+
+article ul li > p {
+    margin: 0;
+}
+
+/* Dashboard*/
+table {
+    width: 80%;
+}
+
+table, div.container > div {
+    height: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+table th {
+    font-weight: bold;
+    height: 75px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+div {
+    width: 15%;
+}
+
+div > ul {
+    list-style-type: circle;  
+    width: 80%;
+}
+
+article > ul {
+    list-style-type: circle;
+}
+
+div > p {
+    width: 80%;
+    margin-left: 10%;
+}
