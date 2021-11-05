@@ -21,13 +21,13 @@
     // Custom settings
     "baseUrl": ".",
     "paths": {
-      "@components/": [
+      "components/": [
         "components/*"
       ],
-      "@styles/": [
+      "styles/": [
         "styles/*"
       ],
-      "@pages/": [
+      "pages/": [
         "pages/*"
       ]
     }
