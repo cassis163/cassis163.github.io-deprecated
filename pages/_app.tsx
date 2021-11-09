@@ -18,6 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       path: "/git",
     },
     {
+      name: "Music",
+      path: "/music",
+    },
+    {
       name: "Contact",
       path: "/contact",
     },
