@@ -3,8 +3,12 @@
     "next/core-web-vitals",
     "plugin:editorconfig/all",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "airbnb-typescript"
   ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "plugins": [
     "editorconfig"
   ]
