@@ -15,21 +15,18 @@ const Navigation: React.FC<NavigationProps> = ({ routes }) => {
   const router = useRouter();
 
   return (
-    <>
-      <ul className={styles.navbar}>
-        {routes.map((route) => (
-          <li
-            key={route.name}
-            className={router.pathname === route.path ? styles.activeRoute : ''}
-          >
-            <Link href={route.path} passHref>
-              <p>{route.name}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div id="textureUnderNav" />
-    </>
+    <ul className={styles.navbar}>
+      {routes.map((route) => (
+        <li
+          key={route.name}
+          className={router.pathname === route.path ? styles.activeRoute : ''}
+        >
+          <Link href={route.path} passHref>
+            <p>{route.name}</p>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 
