@@ -10,16 +10,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       path: "/",
     },
     {
-      name: "Career",
-      path: "/career",
-    },
-    {
-      name: "Git",
-      path: "/git",
-    },
-    {
-      name: "Music",
-      path: "/music",
+      name: "Projects",
+      path: "/projects",
     },
     {
       name: "Contact",
@@ -30,7 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navigation routes={navigationRoutes} />
-      <div id="textureUnderNav" />
       <Component {...pageProps} />
       <Footer />
     </>
