@@ -1,8 +1,12 @@
 import styles from "../styles/Container.module.scss"
 
-const Container: React.FC = ({children}) => {
+type ContainerProps = {
+  color?: string
+}
+
+const Container: React.FC<ContainerProps> = ({children, color}) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ backgroundColor: color }}>
       {children}
     </div>
   )
