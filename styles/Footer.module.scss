@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primaryColor;
+    border-top: 2px solid grey;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    li {
+        color: white;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    hr {
+        height: 100%; /* you might need some positioning for this to work, see other questions about 100% height */
+        width: 0;
+        border: 1px solid darkgray;
+    }
+}

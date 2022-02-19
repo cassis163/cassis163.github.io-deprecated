@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+.articleHeader {
+  border-bottom: 2px solid lighten(grey, 20);
+  font-size: x-large;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.articleText {
+  padding-top: 1rem;
+}
+
+.articleHeader, .articleText {
+  width: 50%;
+}
