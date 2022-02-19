@@ -1,3 +1,4 @@
+import '@fontsource/roboto';
 import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Navigation, { NavigationRoute } from '../components/Navigation';
