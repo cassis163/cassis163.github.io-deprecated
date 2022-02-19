@@ -1,7 +1,9 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:editorconfig/all"
+    "plugin:editorconfig/all",
+    "airbnb",
+    "airbnb/hooks"
   ],
   "plugins": [
     "editorconfig"
