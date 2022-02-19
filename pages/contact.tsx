@@ -1,7 +1,5 @@
-import { NextPage } from "next";
+import { NextPage } from 'next';
 
-const Contact: NextPage = () => {
-  return (<></>)
-}
+const Contact: NextPage = () => (<>Contact</>);
 
 export default Contact;

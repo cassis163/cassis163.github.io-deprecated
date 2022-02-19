@@ -1,6 +1,6 @@
-import { useRouter } from "next/dist/client/router";
-import Link from "next/link";
-import styles from "../styles/Navigation.module.scss";
+import { useRouter } from 'next/dist/client/router';
+import Link from 'next/link';
+import styles from '../styles/Navigation.module.scss';
 
 export type NavigationRoute = {
   name: string;
@@ -20,10 +20,10 @@ const Navigation: React.FC<NavigationProps> = ({ routes }) => {
         {routes.map((route) => (
           <li
             key={route.name}
-            className={router.pathname === route.path ? styles.activeRoute : ""}
+            className={router.pathname === route.path ? styles.activeRoute : ''}
           >
-            <Link href={route.path}>
-              <a>{route.name}</a>
+            <Link href={route.path} passHref>
+              <p>{route.name}</p>
             </Link>
           </li>
         ))}

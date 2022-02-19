@@ -1,7 +1,5 @@
-import { NextPage } from "next";
+import { NextPage } from 'next';
 
-const Git: NextPage = () => {
-  return (<></>)
-}
+const Git: NextPage = () => (<>Projects</>);
 
 export default Git;
