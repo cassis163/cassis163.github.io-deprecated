@@ -1,9 +1,21 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:editorconfig/all"
+    "plugin:editorconfig/all",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript"
   ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "plugins": [
     "editorconfig"
-  ]
+  ],
+  "rules": {
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
 }
